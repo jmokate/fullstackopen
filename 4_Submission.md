@@ -19,4 +19,9 @@ browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
 activate server
 server-->>browser: Javascript file
 deactivate server
+
+browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+activate server
+server-->>browser: JSON data of updated note list
+deactivate server
 ```
