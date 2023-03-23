@@ -2,7 +2,6 @@
 sequenceDiagram
 browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
 activate server
-server->>database: Add user note
 server-->>browser: Redirect satus code 302
 deactivate server
 
